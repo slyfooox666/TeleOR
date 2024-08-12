@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script type="text/javascript" src="main.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JM2CPK6QLP"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-JM2CPK6QLP');
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TeleOR - Description</title>
+  </head>
+  <body onload="mainDivResize('factsfigures')" onresize="mainDivResize()">
+    <style>
+      /*************************************
+       The box that contain BibTeX code
+       *************************************/
+      div.noshow { display: none; }
+      div.bibtex {
+        margin-right: 0%;
+        margin-top: 1.2em;
+        margin-bottom: 1em;
+        border: 1px solid silver;
+        padding: 0em 1em;
+        background: #ffffee;
+      }
+      div.bibtex pre { font-size: 90%; overflow: auto;  width: 100%; padding: 0em 0em;}
+    </style>
+    <script type="text/javascript">
+        // Toggle Display of BibTeX
+        function toggleBibtex(articleid) {
+            var bib = document.getElementById('bib_'+articleid);
+            if (bib) {
+                if(bib.className.indexOf('bibtex') != -1) {
+                    bib.className.indexOf('noshow') == -1?bib.className = 'bibtex noshow':bib.className = 'bibtex';
+                }
+            } else {
+                return;
+            }
+        }
+      </script>
+    <div class="topnav" id="myTopnav">
+      <a id="100" href="index.html" class="title">TeleOR: Real-time Telemedicine System for Full-Scene Operating Room</a>
+<!-- <div id="challenge" class="menu-dropdown">
+<a href="challenge_overview.html" class="droplink">Challenge</a>
+<div class="menu-dropdown-content" style="right:0px;">
+      <a href="challenge_overview.html" class="subitem">Overview</a>
+      <a href="challenge2019_downloads.html" class="subitem">Downloads</a>
+      <a href="evaluation.html" class="subitem">Evaluation</a>
+      <a href="challenge2019_guidelines.html" class="subitem">Participation guidelines</a>
+      <a href="challenge2019.html" class="subitem">Past challenge: 2019</a>
+      <a href="challenge.html" class="subitem">Past challenge: 2018</a>
+</div>
+</div> -->
+<!-- <a id="news" href="news.html" class="menuitem">News</a>
+<a id="extras" href="extras.html" class="menuitem">Extras</a>
+<a id="extended" href="extended.html" class="menuitem">Extended</a> -->
+<a id="team" href="team.html" class="menuitem">Team</a>
+<a id="explore" href="explore.html" class="menuitem">Explore</a>
+<a id="download" href="download.html" class="menuitem">Download</a>
+<a id="factsfigures" href="factsfigures.html" class="menuitem">Description</a>
+<a id="0" href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="navbarResize()">&#9776;</a>
+
+    </div>
+    <div class="main" id ="main">
+      <div id="factsfigures_banner">
+      </div>
+      <div style='max-width: 900px; margin: 0 auto;'>
+        <h2>Overview of Real-time Telemedicine System for Full-Scene Operating Room </h2>
+<div>
+  <img src="cover.png"/>
+  <p style="font-size: 12px"><i>Figure 1: Sample frames of the reconstructed OR Scene from 4D-OR dataset[1].</i></p>
+</div>
+</br>
+<p>TeleOR: a pioneering system designed to achieve high-fidelity, real-time scene reconstruction and transmission amidst obstructions and bandwidth limitations.</p>
+<ul>
+<li>Leveraging inherent scene features for dynamic self-calibration without the need for preset markers.</li>
+<li>Exploiting selective OR reconstruction to dynamically change scene segments to reduce reconstruction complexity.</li>
+<li>Using viewport-adaptive transmission  based on real-time client feedback to deliver 3D reconstructions within bandwidth constraints.</li>
+</ul>
+<p>Our system can support multiple downstream tasks in <b>telemedicine</b> for example:</p>
+<ul>
+<li>Medical Education</li>
+<li>Remote Monitoring</li>
+<li>Remote Assistance</li>
+</ul>
+
+
+<h2>Publications</h2>
+<p style="margin-block-end: 7px;">The following paper describes our proposed system in depth.</p>
+<table style="border: 0;">
+    <tr>
+      <td width=17% style="border: 0;">
+        <img src="demo2.png">
+      </td>
+      <td width=75% style="border: 0;">
+        TeleOR: Real-time Telemedicine System for Full-Scene Operating Room<br>
+        <i>Yixuan Wu*, Kaiyuan Hu*, Qian Shao, Jintai Chen, Danny Z. Chen, and Jian Wu<br>
+          Zhejiang Univeristiy,
+          The Chinese University of Hong Kong, Shenzhen</i><br>          
+          MICCAI 2024.<br>
+        <a href="https://arxiv.org/abs/2407.19763">[arXiv]</a>
+      </td>
+  </tr>
+</table>
+
+
+      </div>
+    </div>
+  </body>
+</html>
